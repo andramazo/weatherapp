@@ -1,0 +1,33 @@
+.mainContainer {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-items: center;
+  grid-row-gap: 0.3rem;
+  min-width: 250px;
+}
+
+.mainContainer div:first-child {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.mainContainer div:nth-child(2) span {
+  display: block;
+  cursor: pointer;
+}
+
+.mainContainer div:nth-child(2) span:hover {
+    color: hsl(233,8%,62%)
+}
+
+.mainContainer .btn{
+  display:inline-block;
+  text-transform: none;
+  padding: 0.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 0.6rem;
+  background: linear-gradient(to right, hsl(136,65%,51%), hsl(192,70%,51%));
+  border: 0;
+}

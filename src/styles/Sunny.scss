@@ -1,0 +1,66 @@
+
+.sunny{
+  width: 100%;
+  height: 92%; 
+  background-color: #ffd300;
+  clip-path: circle(20% at 98% 1%);
+  z-index:-100 ;
+  position: absolute;
+  animation:blinkingText 1.2s infinite;
+}
+
+.sunnyTwo{
+  width: 100%;
+  height: 92%; 
+  background-color: #ffdb00;
+  clip-path: circle(30% at 98% 1%);
+  z-index:-200;
+  position: absolute;
+  animation:blinkingText2 1.8s infinite;
+}
+  
+.sunnyThree{
+  width: 100%;
+  height: 92%; 
+  background-color: #ffea00;
+  clip-path: circle(40% at 98% 1%);
+  z-index:-300;
+  position: absolute;
+  animation:blinkingText 2.4s infinite;
+}
+
+.sunnyFour{
+  width: 100%;
+  height: 92%; 
+  background-color: #ffdb00;
+  clip-path: circle(51.8% at 98% 1%);
+  opacity: 0.5;
+  z-index: -400;
+  position: absolute;
+  animation:blinkingText4 2.8s infinite;
+}
+
+@keyframes blinkingText{
+  0%{     background-color: #ffd300;    }
+  60%{    background-color: #ffdb00; }
+  99%{    background-color:#ffea00;  }
+  100%{   background-color: #ffdb00;    }
+}
+ @keyframes blinkingText2{
+  0%{     background-color: #ffdb00;    }
+  60%{    background-color: #ffea00; }
+  99%{    background-color:#ffdb00;  }
+  100%{   background-color: #ffd300;    }
+}
+@keyframes blinkingText3{
+  0%{     background-color: #ffea00;    }
+  60%{    background-color: #ffdb00; }
+  99%{    background-color:#ffd300;  }
+  100%{   background-color: #ffdb00;    }
+}
+@keyframes blinkingText4{
+  0%{     background-color: #ffdb00;    }
+  60%{    background-color: #ffd300; }
+  99%{    background-color:#ffdb00;  }
+  100%{   background-color: #ffea00;    }
+}
